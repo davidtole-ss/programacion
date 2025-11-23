@@ -1,4 +1,4 @@
-package Ejercicio03Clases;
+package Ejercicio03;
 
 public class Producto {
     private String nombre;

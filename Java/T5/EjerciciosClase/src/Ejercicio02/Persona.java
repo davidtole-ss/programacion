@@ -1,4 +1,4 @@
-package Ejercicio02Clases;
+package Ejercicio02;
 
 public class Persona {
     private String nombre;
