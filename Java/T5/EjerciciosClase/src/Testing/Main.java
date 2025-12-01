@@ -1,9 +1,10 @@
-package Test02;
+package Testing;
 
-import Test01.Alumno;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
 
     }
 }
