@@ -7,6 +7,7 @@ public class Metodo2 {
         Scanner datos = new Scanner(System.in);
         System.out.println("Introduce una frase de 3 palabras");
         String frase = datos.nextLine();
+
         int posicion1 = frase.indexOf(" ");
         int posicion2 = frase.indexOf(" ", posicion1+1);
         String subcadena1 = frase.substring(posicion1+1,posicion2);

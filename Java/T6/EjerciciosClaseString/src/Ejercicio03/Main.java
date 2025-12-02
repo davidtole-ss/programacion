@@ -5,9 +5,10 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner datos = new Scanner(System.in);
+        System.out.println("Introduce una palabra.");
         String palabra = datos.nextLine();
         int cuentaVocales = 0;
-        for (int i = 0; i <= palabra.length() - 1; i++) {
+        for (int i = 0; i < palabra.length(); i++) {
             switch (palabra.charAt(i)) {
                 case 'a', 'A':
                     cuentaVocales++;
@@ -24,10 +25,10 @@ public class Main {
                 case 'u', 'U':
                     cuentaVocales++;
                     break;
-                default:
             }
         }
         System.out.println(cuentaVocales);
+
 
     }
 }
