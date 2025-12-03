@@ -1,8 +1,8 @@
-package Ejercicio03;
+package Ejercicio04;
 
 import java.util.Scanner;
 
-public class Main3 {
+public class Main {
     public static void main(String[] args) {
         Scanner datos = new Scanner(System.in);
         System.out.println("Ingresa una frase.");

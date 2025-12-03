@@ -10,12 +10,18 @@ public class Main {
         String cadena1=datos.nextLine();
         System.out.println("Introduce otra palabra.");
         String cadena2=datos.nextLine();
+        int longitud;
 
+        if(cadena1.length()<cadena2.length()){
+            longitud=cadena1.length();
+        }else{
+            longitud=cadena2.length();
+        }
         if(cadena1.equals(cadena2)){
             System.out.println("Las palabras son iguales");
         }
         else{
-            for(int i=0;i<cadena1.length();i++){
+            for(int i=0;i<longitud-1;i++){
                 if(cadena1.charAt(i)==cadena2.charAt(i)){
                 }else{
                     contador++;
