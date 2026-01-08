@@ -11,6 +11,7 @@ public class Main {
         int dia1 = 0;
         int mes1 = 0;
         int anio1 = 0;
+        int añoActual = Year.now().getValue();
         while (correcto) {
             System.out.println("Introduce una fecha en formato dd/MM/yyyy (DIA/MES/AÑO).");
             fecha = datos.nextLine();
@@ -26,7 +27,7 @@ public class Main {
                 dia1 = Integer.parseInt(dia);
                 mes1 = Integer.parseInt(mes);
                 anio1 = Integer.parseInt(anio);
-                if ((dia1 >= 1 && dia1 <= 31) && (mes1 >= 1 && mes1 <= 12) && (anio1 <= 2025)) {
+                if ((dia1 >= 1 && dia1 <= 31) && (mes1 >= 1 && mes1 <= 12) && (anio1 <= añoActual)) {
                     correcto = false;
                 } else {
                     correcto = true;
