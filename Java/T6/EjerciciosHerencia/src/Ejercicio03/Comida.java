@@ -11,6 +11,6 @@ public class Comida extends Producto{
     @Override
     public void mostrarInfo() {
         super.mostrarInfo();
-        System.out.println("Fecha de Caducidad: "+fechaCaducidad);
+        System.out.println("Fecha de Caducidad:"+fechaCaducidad);
     }
 }
