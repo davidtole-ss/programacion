@@ -14,16 +14,16 @@ public class Main {
         boolean hayPrefijo = false;
         boolean haySufijo = false;
 
-        int posicionPrefijo = palabra.indexOf(prefijo);
+        int posicionPrefijo = palabra.toLowerCase().indexOf(prefijo);
         if (posicionPrefijo != -1 && prefijo.length() > 0) {
             hayPrefijo = true;
         }
-        int posicionSufijo = palabra.indexOf(sufijo);
+        int posicionSufijo = palabra.toLowerCase().indexOf(sufijo);
         if (posicionSufijo != -1 && sufijo.length() > 0) {
             haySufijo = true;
         }
         System.out.println("¿Empieza por el prefijo?: " + hayPrefijo);
-        System.out.println("¿Empieza por el sufijo?: " + haySufijo);
+        System.out.println("¿Termina por el sufijo?: " + haySufijo);
 
 
     }
