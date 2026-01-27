@@ -1,6 +1,6 @@
 package EliminarElementoArray;
 import java.util.*;
-public class Main2 {
+public class Main {
     public static String[] eliminarElemento (String[] array, int posicion){
         String [] nuevoArray= new String[array.length-2];
         System.arraycopy(array, 0, nuevoArray, 0, posicion);
