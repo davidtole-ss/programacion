@@ -77,7 +77,6 @@ public class Main {
                     vocalMasRepetida="u";
                     vocalRepetida=u;
                 }
-
                 seguir = false;
             }
         }

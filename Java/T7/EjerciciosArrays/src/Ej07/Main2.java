@@ -1,4 +1,4 @@
-package Ej06;
+package Ej07;
 
 import java.util.Arrays;
 import java.util.Scanner;
