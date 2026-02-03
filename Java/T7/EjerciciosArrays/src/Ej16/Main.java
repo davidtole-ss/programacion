@@ -16,12 +16,12 @@ public class Main {
         int tam=datos.nextInt();
         int [] array= new int[tam];
         for(int i=0;i<tam;i++){
-            boolean esPrimo=true;
-            while(esPrimo){
+            boolean noEsPrimo=true;
+            while(noEsPrimo){
                 int numero=generadorNumeros(min,max);
                 if(esPrimo(numero)){
                     array[i]=numero;
-                    esPrimo=false;
+                    noEsPrimo=false;
                 }
             }
         }return array;
