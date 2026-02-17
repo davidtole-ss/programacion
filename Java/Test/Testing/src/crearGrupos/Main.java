@@ -1,5 +1,6 @@
 package crearGrupos;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Main {
@@ -9,7 +10,6 @@ public class Main {
         String[] grupo1 = new String[4];
         String[] grupo2 = new String[4];
         String[] grupo3 = new String[4];
-
         for (int i = 0; i < grupo1.length; i++) {
             grupo1[i] = alumnos[i];
         }
@@ -24,7 +24,6 @@ public class Main {
         System.out.println(Arrays.toString(grupo2));
         System.out.println(Arrays.toString(grupo3));
     }
-
     public static void desordenaArray(String[] array) {
         for (int i = 0; i < array.length; i++) {
             int azar=(int)(Math.random()*12);
@@ -32,8 +31,5 @@ public class Main {
             array[i]=array[azar];
             array[azar]=nombre;
         }
-
     }
-
-
 }

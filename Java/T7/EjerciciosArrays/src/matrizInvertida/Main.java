@@ -1,17 +1,19 @@
 package matrizInvertida;
 
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
-        int num[][] = {
-                {1, 2, 3},
-                {4, 5, 6},
-                {7, 8, 9}
-        };
-        for (int y = 0; y < num[0].length; y++) {   // columnas
-            for (int x = 0; x < num.length; x++) { // filas
-                System.out.print(num[x][y] + "  ");
-            }
-            System.out.println();
-        }
+        ArrayList <Integer> numeros = new ArrayList<Integer>();
+        numeros.add(1);
+        numeros.add(2);
+        numeros.add(3);
+        numeros.add(4);
+        numeros.add(5);
+        System.out.println(numeros);
+        numeros.removeLast();
+        System.out.println(numeros);
+
     }
+
 }

@@ -80,6 +80,7 @@ public class Main {
                 seguir = false;
             }
         }
+
         System.out.println("La vocal mas veces introducida es la "+vocalMasRepetida+" repetida "+vocalRepetida+" veces.");
         System.out.println("La primera vocal introducida : "+vocalUno);
     }

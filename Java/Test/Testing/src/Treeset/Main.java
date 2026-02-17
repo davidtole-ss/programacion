@@ -4,6 +4,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
+        /*
         // Crear un HashSet para almacenar nombres
         TreeSet<String> arrNombres = new TreeSet<>();
 // Agregar nombres al HashSet
@@ -18,5 +19,14 @@ public class Main {
             System.out.println(itr.next());
         }
         System.out.println(arrNombres);
+        */
+        TreeSet <Integer>tree1= new TreeSet();
+        tree1.add(1);
+        tree1.add(2);
+        tree1.add(3);
+        System.out.println(tree1);
+        TreeSet <Integer>tree2= new TreeSet<Integer>(tree1);
+        tree2.add(4);
+        System.out.println(tree2);
     }
 }

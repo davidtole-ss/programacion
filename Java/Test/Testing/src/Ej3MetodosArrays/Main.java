@@ -12,7 +12,7 @@ public class Main {
         String[] arrayPalabras = rellenaArray();
         System.out.println(Arrays.toString(arrayPalabras));
         boolean comprobar = comprobarPalabrasIguales(arrayPalabras);
-        System.out.println(comprobar);
+        System.out.println("Mas de la mitad de las palabras son iguales: "+comprobar);
 
     }
 
