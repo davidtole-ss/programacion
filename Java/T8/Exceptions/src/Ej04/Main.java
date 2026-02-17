@@ -15,10 +15,9 @@ public class Main {
                     seguir=false;
                 }
             } catch (Exception e) {
-                System.out.println("¡Cuidado! Solo puedes escribir números enteros.");
+                System.err.println("¡Cuidado! Solo puedes escribir números enteros.");
                 datos.nextLine(); // Limpia lo que el usuario escribió mal
             }
-
         }
     }
 }
