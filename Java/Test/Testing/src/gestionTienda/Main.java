@@ -8,7 +8,19 @@ public class Main {
         Sistema s1= new Sistema(productosTienda);
         s1.insertarProducto();
         s1.comprar();
-        ArticuloVendible p1= new ArticuloVendible();
-        
+
+        //Mayor a menor
+        productosTienda.sort((p1, p2) ->
+                Double.compare(p2.getPrecio(), p1.getPrecio())
+        );
+
+        /*Menor a mayor
+        productosTienda.sort((p1, p2) ->
+                Double.compare(p1.getPrecio(), p2.getPrecio())
+        );
+        */
+
+
+
     }
 }

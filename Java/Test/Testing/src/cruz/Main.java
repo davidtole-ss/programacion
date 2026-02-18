@@ -25,7 +25,6 @@ public class Main {
         System.out.println(Arrays.toString(arrayNuevo));
 
     }
-
     public static int[] añadirElementoArray(int[] array, int elemento, int posicion) {
         int[] nuevoArray = new int[array.length + 1];
         System.arraycopy(array, 0, nuevoArray, 0, posicion);
