@@ -10,7 +10,7 @@ public class Main {
 
         try {
             validarContraseña(contraseña);
-            System.out.println("[CONTRASEÑA SEGURA ESTABLECIDA]");
+            System.out.println("SYSTEMA: [CONTRASEÑA SEGURA ESTABLECIDA]");
         } catch (IllegalArgumentException e) {
             System.err.println(e.getMessage());
         }
