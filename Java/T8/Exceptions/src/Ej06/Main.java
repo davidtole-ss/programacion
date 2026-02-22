@@ -1,9 +1,14 @@
 package Ej06;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-    }
 
+    }
+    public static double convertirTemperatura(int temperatura){
+
+        
+        return temperatura;
+    }
 }
