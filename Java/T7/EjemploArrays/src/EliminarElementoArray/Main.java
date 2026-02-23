@@ -2,9 +2,9 @@ package EliminarElementoArray;
 import java.util.*;
 public class Main {
     public static String[] eliminarElemento (String[] array, int posicion){
-        String [] nuevoArray= new String[array.length-2];
+        String [] nuevoArray= new String[array.length-1];
         System.arraycopy(array, 0, nuevoArray, 0, posicion);
-        System.arraycopy(array, posicion+2, nuevoArray, posicion, nuevoArray.length-posicion);
+        System.arraycopy(array, posicion+1, nuevoArray, posicion, nuevoArray.length-posicion);
         return nuevoArray;
     }
     public static void main (String[] args) {

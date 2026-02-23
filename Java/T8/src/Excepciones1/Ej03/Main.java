@@ -1,4 +1,4 @@
-package Ej03;
+package Excepciones1.Ej03;
 
 import java.util.Arrays;
 import java.util.Random;

@@ -1,4 +1,4 @@
-package Ej07;
+package Excepciones1.Ej07;
 
 import java.util.Scanner;
 

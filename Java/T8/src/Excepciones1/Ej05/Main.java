@@ -1,4 +1,4 @@
-package Ej05;
+package Excepciones1.Ej05;
 
 import java.util.*;
 

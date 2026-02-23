@@ -1,6 +1,4 @@
-package Ejemplo4;
-
-import java.util.*;
+package Ejemplo04;
 
 public class Main {
     public static void main(String[] args) {

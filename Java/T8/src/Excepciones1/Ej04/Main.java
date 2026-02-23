@@ -1,4 +1,4 @@
-package Ej04;
+package Excepciones1.Ej04;
 
 import java.util.Scanner;
 

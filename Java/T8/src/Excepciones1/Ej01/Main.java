@@ -1,4 +1,4 @@
-package Ej01;
+package Excepciones1.Ej01;
 
 public class Main {
     public static void main(String[] args) {

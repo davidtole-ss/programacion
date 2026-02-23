@@ -1,4 +1,4 @@
-package Ej02;
+package Excepciones1.Ej02;
 
 import java.util.Arrays;
 import java.util.Scanner;
