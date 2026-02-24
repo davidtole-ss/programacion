@@ -1,4 +1,4 @@
-package generico;
+package generico.EjemplosGenéricos;
 
 public class Persona<V> {
     private String nom;

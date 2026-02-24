@@ -1,4 +1,4 @@
-package generico;
+package generico.EjemplosGenéricos;
 
 public class PersonaPlus<V, V2, V3> {
     private V2 nombre;

@@ -1,4 +1,4 @@
-package generico;
+package generico.EjemplosGenéricos;
 
 public class MainPersonaPlus {
     public static void main(String[] args) {
