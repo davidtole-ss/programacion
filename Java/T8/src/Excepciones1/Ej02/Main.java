@@ -10,7 +10,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         try{
             for (int i = 0; i < 10; i++) {
-                System.out.println(i + "Introduce un numero: ");
+                System.out.println(i+1 + " Introduce un numero: ");
                 array[i] = sc.nextInt();
             }
             for (int i = 0; i < 10; i++) {

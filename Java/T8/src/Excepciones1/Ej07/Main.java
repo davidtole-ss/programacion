@@ -15,6 +15,7 @@ public class Main {
             System.err.println(e.getMessage());
         }
     }
+
     public static void validarContraseña(String contrasenia) {
         if (contrasenia.length() < 8) {
             throw new IllegalArgumentException("Error: La contraseña debe contener al menos 8 caracteres.");
@@ -24,7 +25,6 @@ public class Main {
         boolean num = false;
         boolean espacios = false;
         boolean caracterEspecial = false;
-
         for (int x = 0; x < contrasenia.length(); x++) {
             char c = contrasenia.charAt(x);
             if (Character.isUpperCase(c)) {

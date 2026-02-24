@@ -21,13 +21,8 @@ public class Main {
             }
 
             for (int i = 0; i < tam; i++) {
-                try {
                     System.out.print("Introduce el elemento " + (i + 1) + " :");
                     array[i] = datos.nextInt();
-                } catch (InputMismatchException e) {
-                    System.err.println("Esto no es un numero entero.");
-                    break;
-                }
             }
             if (array != null) {
                 double media = calculaMediaArray(array);
