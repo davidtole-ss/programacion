@@ -1,19 +1,17 @@
 package generico.EjercicioClase;
 
-import java.util.ArrayList;
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         ArrayList <Alumno> alumnos = new ArrayList<>();
-        Alumno <Double>a1 = new Alumno<>("Mario","Perez","BBDD",9.0);
-        Alumno <Double>a2 = new Alumno<>("Felipe","Jimenez","Prgramacion",8.0);
-        Alumno <Double>a3 = new Alumno<>("Manuel","Torrijas","Ingles",7.0);
+        Alumno <Integer>a1 = new Alumno<>("Mario","Perez","BBDD",9);
+        Alumno <Double>a2 = new Alumno<>("Felipe","Jimenez","Programacion",8.0);
+        Alumno <Double>a3 = new Alumno<>("Manuel","Sanchez","Ingles",7.0);
         alumnos.add(a1);
         alumnos.add(a2);
         alumnos.add(a3);
-
 
         ArrayList<String> nombres = new ArrayList<>();
 
