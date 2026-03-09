@@ -5,22 +5,26 @@ public class OrdenarAsc {
         public static void main(String[] args) {
 
             int[] numeros = {5, 2, 9, 1, 7};
+            int [] numerosOrdenados=ordenaArrayAscendente(numeros);
 
-            for (int i = 0; i < numeros.length - 1; i++) {
-                for (int j = 0; j < numeros.length - 1 - i; j++) {
-
-                    if (numeros[j] > numeros[j + 1]) {  // condición ascendente
-                        int aux = numeros[j];
-                        numeros[j] = numeros[j + 1];
-                        numeros[j + 1] = aux;
-                    }
-                }
-            }
-
-            for (int n : numeros) {
+            for (int n : numerosOrdenados) {
                 System.out.print(n + " ");
             }
         }
-    }
+        public static int [] ordenaArrayAscendente(int []array){
+            for (int i = 0; i < array.length - 1; i++) {
+                for (int j = 0; j < array.length - 1; j++) {
+
+                    if (array[j] > array[j + 1]) {  // condición ascendente
+                        int aux = array[j];
+                        array[j] = array[j + 1];
+                        array[j + 1] = aux;
+                    }
+                }
+            }
+            return array;
+        }
+   }
+    
 
 
