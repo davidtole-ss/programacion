@@ -3,6 +3,7 @@ package recursividad;
 public class sumaHastaN {
     public static void main() {
         System.out.println(suma(5));
+        System.out.println(cuentaDigitos(1234));
 
     }
 

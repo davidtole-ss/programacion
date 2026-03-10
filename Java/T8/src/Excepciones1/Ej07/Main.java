@@ -7,7 +7,6 @@ public class Main {
         Scanner datos = new Scanner(System.in);
         System.out.println("Introduce una contraseña.");
         String contraseña = datos.nextLine();
-
         try {
             validarContraseña(contraseña);
             System.out.println("SYSTEMA: [CONTRASEÑA SEGURA ESTABLECIDA]");
@@ -15,7 +14,6 @@ public class Main {
             System.err.println(e.getMessage());
         }
     }
-
     public static void validarContraseña(String contrasenia) {
         if (contrasenia.length() < 8) {
             throw new IllegalArgumentException("Error: La contraseña debe contener al menos 8 caracteres.");
