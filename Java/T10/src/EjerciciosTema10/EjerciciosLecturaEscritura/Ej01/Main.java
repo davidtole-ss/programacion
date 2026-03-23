@@ -1,4 +1,4 @@
-package EjerciciosLecturaEscritura.Ej01;
+package EjerciciosTema10.EjerciciosLecturaEscritura.Ej01;
 
 import java.io.*;
 

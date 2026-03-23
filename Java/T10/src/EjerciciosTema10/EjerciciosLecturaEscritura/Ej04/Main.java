@@ -1,4 +1,4 @@
-package EjerciciosLecturaEscritura.Ej04;
+package EjerciciosTema10.EjerciciosLecturaEscritura.Ej04;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

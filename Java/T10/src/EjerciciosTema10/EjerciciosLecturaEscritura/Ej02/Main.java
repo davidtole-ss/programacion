@@ -1,4 +1,4 @@
-package EjerciciosLecturaEscritura.Ej02;
+package EjerciciosTema10.EjerciciosLecturaEscritura.Ej02;
 
 import java.io.FileWriter;
 

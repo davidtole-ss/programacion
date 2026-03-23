@@ -1,4 +1,4 @@
-package EjercicioVehiculoJson;
+package EjerciciosTema10.EjercicioVehiculoJson;
 
 public class Vehiculo {
     protected  String marca;

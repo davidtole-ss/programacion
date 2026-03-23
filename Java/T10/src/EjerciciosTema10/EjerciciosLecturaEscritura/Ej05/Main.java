@@ -1,4 +1,4 @@
-package EjerciciosLecturaEscritura.Ej05;
+package EjerciciosTema10.EjerciciosLecturaEscritura.Ej05;
 
 import java.io.*;
 import java.util.Scanner;
