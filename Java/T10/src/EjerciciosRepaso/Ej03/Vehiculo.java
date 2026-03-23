@@ -1,4 +1,4 @@
-package EjerciciosTema10.EjercicioVehiculoJson;
+package EjerciciosRepaso.Ej03;
 
 public class Vehiculo {
     protected  String marca;
@@ -56,10 +56,11 @@ public class Vehiculo {
     }
     public String toString(){
         return "Coche{" +
-                "Marca='" + marca + '\'' +
-                ", modelo=" + modelo +
+                "Marca='" + marca + "'" +
+                ", modelo=" + modelo +"'"+
                 ", anio=" + anio +
-                ", anio='" + anio + '\'' +
+                ", color='" + color+ "'" +
+                ", precio=" + precio +"'"+
                 '}';
     }
 }
