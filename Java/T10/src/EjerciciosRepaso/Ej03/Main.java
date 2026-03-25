@@ -20,6 +20,7 @@ public class Main {
         int nueve = 0;
         int veinte = 0;
         int veintiuno = 0;
+
         int[] arrayAnio = new int[listaVehiculos.size()];
         for (int x = 0; x < listaVehiculos.size(); x++) {
             arrayAnio[x] = listaVehiculos.get(x).getAnio();

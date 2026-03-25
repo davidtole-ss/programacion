@@ -1,8 +1,6 @@
 package EjerciciosRepaso.Ej01;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 
 public class Main {
     public static void main(String[] args) throws IOException {
