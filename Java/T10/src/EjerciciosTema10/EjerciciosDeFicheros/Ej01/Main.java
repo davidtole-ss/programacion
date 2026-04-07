@@ -18,12 +18,10 @@ public class Main {
             for (File archivo : archivos) {
                 if(archivo.length()<=tam){
                     if(archivo.isFile()){
-                        long fecha=archivo.lastModified();
                         Date fechaMod=new Date(archivo.lastModified());
                         System.out.printf("[FICH] %s %50s",archivo.getName(),fechaMod);
                         System.out.println();
                     }else if(archivo.isDirectory()){
-                        long fecha=archivo.lastModified();
                         Date fechaMod=new Date(archivo.lastModified());
                         System.out.printf("[DIR] %s %50s",archivo.getName(),fechaMod);
                         System.out.println();
