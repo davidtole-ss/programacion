@@ -5,13 +5,27 @@ public class Pedido {
     private int id_producto;
     private int cantidad;
     private String fecha;
+    private String nombre;
+    private double valor_total_pedido;
 
     public Pedido(){}
+    public Pedido(int id_pedido, int id_producto, int cantidad, String fecha, String nombre) {
+        this.id_pedido = id_pedido;
+        this.id_producto = id_producto;
+        this.cantidad = cantidad;
+        this.fecha = fecha;
+        this.nombre = nombre;
+    }
     public Pedido(int id_pedido, int id_producto, int cantidad, String fecha) {
         this.id_pedido = id_pedido;
         this.id_producto = id_producto;
         this.cantidad = cantidad;
         this.fecha = fecha;
+    }
+
+    public Pedido(int id_pedido,double valor_total_pedido) {
+        this.id_pedido = id_pedido;
+        this.valor_total_pedido = valor_total_pedido;
     }
 
     public int getId_pedido() {
@@ -44,6 +58,22 @@ public class Pedido {
 
     public void setFecha(String fecha) {
         this.fecha = fecha;
+    }
+
+    public double getValor_total_pedido() {
+        return valor_total_pedido;
+    }
+
+    public void setValor_total_pedido(double valor_total_pedido) {
+        this.valor_total_pedido = valor_total_pedido;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     @Override

@@ -6,6 +6,15 @@ public class Producto {
     private String descripcion;
     private double precio;
     private int stock;
+    private int total_pedido;
+
+    public int getTotal_pedido() {
+        return total_pedido;
+    }
+
+    public void setTotal_pedido(int total_pedido) {
+        this.total_pedido = total_pedido;
+    }
 
     public Producto() {}
     public Producto(int id_producto, String nombre, String descripcion, double precio, int stock) {
@@ -14,6 +23,10 @@ public class Producto {
         this.descripcion = descripcion;
         this.precio = precio;
         this.stock = stock;
+    }
+    public Producto(String nombre, int total_pedido) {
+        this.nombre = nombre;
+        this.total_pedido = total_pedido;
     }
 
     public int getId_producto() {

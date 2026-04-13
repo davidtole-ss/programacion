@@ -45,6 +45,21 @@ public class ProductoDAO {
         }
         return productos;
     }
+    public List<Producto> obtenerMasVendidos() {
+        List<Producto> productos = new ArrayList<>();
+        String sql = "SELECT pe.id_producto, COUNT(*) as total_pedido,pr.nombre FROM pedidos pe INNER JOIN productos pr ON pe.id_producto=pr.id_producto GROUP BY pe.id_producto,pr.nombre ORDER BY total_pedido DESC";
+        try (Connection conn = ConexionSQLITE.connect();
+             Statement stmt = conn.createStatement();
+             ResultSet rs = stmt.executeQuery(sql)) {
+            while (rs.next()) {
+                productos.add(new Producto(rs.getString("nombre"),rs.getInt("total_pedido")));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return productos;
+    }
+
     public void actualizar(String nombre, Double precio,int stock) {
         String sql = "UPDATE productos SET precio = ?,stock=? WHERE nombre = ?";
         try (Connection conn = ConexionSQLITE.connect();
