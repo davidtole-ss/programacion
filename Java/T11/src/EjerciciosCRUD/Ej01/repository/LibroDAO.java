@@ -1,11 +1,14 @@
-package EjerciciosCRUD.Ej01;
+package EjerciciosCRUD.Ej01.repository;
 
+
+import EjerciciosCRUD.Ej01.model.Libro;
+import EjerciciosCRUD.Ej01.config.ConexionSQLITE;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-class LibroDAO {
+public class LibroDAO {
     public void crearTabla() {
         String sql  = "CREATE TABLE IF NOT EXISTS libros " +
                 "(id_libro INTEGER PRIMARY KEY AUTOINCREMENT, " +

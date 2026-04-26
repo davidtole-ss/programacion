@@ -1,6 +1,9 @@
 package EjerciciosCRUD.Ej01;
 
 
+import EjerciciosCRUD.Ej01.model.Libro;
+import EjerciciosCRUD.Ej01.repository.LibroDAO;
+
 import java.util.List;
 import java.util.Scanner;
 

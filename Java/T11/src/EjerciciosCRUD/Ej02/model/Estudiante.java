@@ -1,4 +1,4 @@
-package EjerciciosCRUD.Ej02;
+package EjerciciosCRUD.Ej02.model;
 
 public class Estudiante {
     private int id_estudiante;

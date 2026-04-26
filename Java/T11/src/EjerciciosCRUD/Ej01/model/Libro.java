@@ -1,4 +1,4 @@
-package EjerciciosCRUD.Ej01;
+package EjerciciosCRUD.Ej01.model;
 
 public class Libro {
     private int id_libro;

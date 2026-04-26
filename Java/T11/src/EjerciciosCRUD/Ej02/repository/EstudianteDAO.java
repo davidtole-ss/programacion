@@ -1,6 +1,8 @@
-package EjerciciosCRUD.Ej02;
+package EjerciciosCRUD.Ej02.repository;
 
 
+import EjerciciosCRUD.Ej02.model.Estudiante;
+import EjerciciosCRUD.Ej02.config.ConexionSQLITE;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -15,8 +17,7 @@ public class EstudianteDAO {
         try (Connection conn = ConexionSQLITE.connect();
              Statement stmt = conn.createStatement()) {
             stmt.execute(sql);   // la crea nueva con todas las columnas
-        } catch (
-                SQLException e) {
+        } catch (SQLException e) {
             e.printStackTrace();
         }
     }
@@ -34,6 +35,7 @@ public class EstudianteDAO {
             e.printStackTrace();
         }
     }
+
     public List<Estudiante> obtenerTodas() {
         List<Estudiante> estudiantes = new ArrayList<>();
         String sql = "SELECT * FROM estudiantes";
@@ -41,14 +43,15 @@ public class EstudianteDAO {
              Statement stmt = conn.createStatement();
              ResultSet rs = stmt.executeQuery(sql)) {
             while (rs.next()) {
-                estudiantes.add(new Estudiante(rs.getInt("id_estudiante"),rs.getString("nombre"),rs.getString("apellido"),rs.getInt("edad"),rs.getString("curso")));
+                estudiantes.add(new Estudiante(rs.getInt("id_estudiante"), rs.getString("nombre"), rs.getString("apellido"), rs.getInt("edad"), rs.getString("curso")));
             }
         } catch (SQLException e) {
             e.printStackTrace();
         }
         return estudiantes;
     }
-    public void actualizar(String nombre, String apellido,String curso) {
+
+    public void actualizar(String nombre, String apellido, String curso) {
         String sql = "UPDATE estudiantes SET curso = ? WHERE nombre = ? AND apellido = ?";
         try (Connection conn = ConexionSQLITE.connect();
              PreparedStatement pstmt = conn.prepareStatement(sql)) {
@@ -60,6 +63,7 @@ public class EstudianteDAO {
             e.printStackTrace();
         }
     }
+
     public void eliminar(String nombre, String apellido) {
         String sql = "DELETE FROM estudiantes WHERE nombre = ? AND apellido = ?";
         try (Connection conn = ConexionSQLITE.connect();

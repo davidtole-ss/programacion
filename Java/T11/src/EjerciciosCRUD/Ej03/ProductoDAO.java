@@ -12,7 +12,7 @@ public class ProductoDAO {
 
         try (Connection conn = ConexionSQLITE.connect();
              Statement stmt = conn.createStatement()) {
-            stmt.execute(sql);   // la crea nueva con todas las columnas
+            stmt.execute(sql);// la crea nueva con todas las columnas
         } catch (
                 SQLException e) {
             e.printStackTrace();
@@ -47,12 +47,19 @@ public class ProductoDAO {
     }
     public List<Producto> obtenerMasVendidos() {
         List<Producto> productos = new ArrayList<>();
-        String sql = "SELECT pe.id_producto, COUNT(*) as total_pedido,pr.nombre FROM pedidos pe INNER JOIN productos pr ON pe.id_producto=pr.id_producto GROUP BY pe.id_producto,pr.nombre ORDER BY total_pedido DESC";
+        String sql = "SELECT pe.id_producto, \n" +
+                "       SUM(pe.cantidad) AS total_vendido, \n" +
+                "       pr.nombre\n" +
+                "FROM pedidos pe\n" +
+                "INNER JOIN productos pr \n" +
+                "    ON pe.id_producto = pr.id_producto\n" +
+                "GROUP BY pe.id_producto, pr.nombre\n" +
+                "ORDER BY total_vendido DESC;";
         try (Connection conn = ConexionSQLITE.connect();
              Statement stmt = conn.createStatement();
              ResultSet rs = stmt.executeQuery(sql)) {
             while (rs.next()) {
-                productos.add(new Producto(rs.getString("nombre"),rs.getInt("total_pedido")));
+                productos.add(new Producto(rs.getString("nombre"),rs.getInt("total_vendido")));
             }
         } catch (SQLException e) {
             e.printStackTrace();
