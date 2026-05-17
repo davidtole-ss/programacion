@@ -1,4 +1,4 @@
-package EjerciciosRepaso.Ej03;
+package EjerciciosRepasoClase.Ej03;
 
 public class Vehiculo {
     protected  String marca;

@@ -15,7 +15,7 @@ public class PedidoDAO {
 
         try (Connection conn = ConexionSQLITE.connect();
              Statement stmt = conn.createStatement()) {
-            stmt.execute(sql);   // la crea nueva con todas las columnas
+            stmt.execute(sql);   // si no existe la crea nueva con todas las columnas
         } catch (SQLException e) {
             e.printStackTrace();
         }

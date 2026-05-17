@@ -1,4 +1,4 @@
-package EjerciciosRepaso.Ej01;
+package EjerciciosRepasoClase.Ej01;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -21,7 +21,7 @@ public class Main3 {
                 String[] linea2 = linea.split("\\|");
                 String nombre=linea2[0];
                 String codigoPostal=linea2[1];
-                int id=Integer.parseInt(linea2[2]);
+                Integer id= parseInt(linea2[2]);
                 lista.add(new Poblacion(nombre,codigoPostal,id));
             }
             linea = br.readLine();

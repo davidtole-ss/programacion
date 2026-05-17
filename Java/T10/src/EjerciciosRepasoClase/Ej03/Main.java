@@ -1,4 +1,4 @@
-package EjerciciosRepaso.Ej03;
+package EjerciciosRepasoClase.Ej03;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 

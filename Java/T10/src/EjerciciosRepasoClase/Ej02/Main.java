@@ -1,8 +1,6 @@
-package EjerciciosRepaso.Ej02;
+package EjerciciosRepasoClase.Ej02;
 
 import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) {
@@ -31,11 +29,7 @@ public class Main {
 
         File rutita = new File("C:\\archivosTxt");
         mostrar(rutita);
-
-
-
     }
-
     public static void mostrar(File ruta){
         File [] archivos=ruta.listFiles();
         for(File archivo:archivos){

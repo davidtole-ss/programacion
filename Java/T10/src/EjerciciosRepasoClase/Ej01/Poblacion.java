@@ -1,4 +1,4 @@
-package EjerciciosRepaso.Ej01;
+package EjerciciosRepasoClase.Ej01;
 
 public class Poblacion {
     protected String nombre;
